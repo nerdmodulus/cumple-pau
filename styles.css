@@ -134,17 +134,17 @@ body {
 .frame { fill: var(--rose); }
 .door { fill: none; stroke: var(--ink); stroke-width: 1.5; stroke-dasharray: 3 3; }
 .labels text {
-  font: 700 17px var(--hand);
+  font: 700 19px var(--hand);
   fill: var(--ink);
   opacity: .55;
   text-anchor: middle;
 }
-.labels .small { font-size: 13px; }
+.labels .small { font-size: 15px; }
 
 /* Pines */
 .pin { cursor: pointer; }
 .pin circle.base { stroke: var(--ink); stroke-width: 2; }
-.pin text { font: 800 12px var(--sans); text-anchor: middle; dominant-baseline: central; pointer-events: none; }
+.pin text { font: 800 14px var(--sans); text-anchor: middle; dominant-baseline: central; pointer-events: none; }
 
 .pin--locked circle.base { fill: var(--white); stroke-opacity: .35; }
 .pin--locked text { fill: var(--ink); opacity: .35; }
@@ -161,7 +161,7 @@ body {
 .pin--done text { fill: var(--ink); }
 
 .pin--final circle.base { fill: var(--ink); }
-.pin--final text { fill: var(--white); font-size: 14px; }
+.pin--final text { fill: var(--white); font-size: 16px; }
 .pin--final.pin--locked circle.base { fill: var(--white); }
 .pin--final.pin--current .ring { stroke: var(--gold); }
 
