@@ -164,6 +164,8 @@ body {
 .pin--final text { fill: var(--white); font-size: 16px; }
 .pin--final.pin--locked circle.base { fill: var(--white); }
 .pin--final.pin--current .ring { stroke: var(--gold); }
+.pin--reveal { animation: pop .6s cubic-bezier(.3,1.6,.5,1); transform-origin: center; transform-box: fill-box; }
+#tvUnit { transition: fill .6s ease; }
 
 /* Tarjeta de pista */
 .clue {
