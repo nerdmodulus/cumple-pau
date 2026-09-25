@@ -32,7 +32,7 @@ const CONFIG = {
       pista: "Donde Noah se afila las uñas, algo te espera cerca de la escalera.",
       ayuda: "El pilar de la baranda que tiene la cuerda enrollada. Revisa los primeros escalones.",
       codigo: "NOAH", letra: "U",
-      mensaje: "¡Tres! Cookie aprueba.",
+      mensaje: "¡Tres! Noah aprueba.",
       x: 22, y: 205
     },
     {
@@ -149,11 +149,16 @@ function renderMap() {
     }));
   });
   const done = state.found >= total;
-  pins.appendChild(makePin(
-    CONFIG.final.x, CONFIG.final.y, "🎁",
-    "pin--final " + (done ? "pin--current" : "pin--locked"),
-    () => done ? showFinale() : toast(`Faltan ${total - state.found} regalos para abrir este`)
-  ));
+  // El mueble de la tele se ve normal hasta el final, y el regalo recién aparece ahí
+  const tv = document.getElementById("tvUnit");
+  if (tv) tv.classList.toggle("piece--tv", done);
+  if (done) {
+    pins.appendChild(makePin(
+      CONFIG.final.x, CONFIG.final.y, "🎁",
+      "pin--final pin--current pin--reveal",
+      showFinale
+    ));
+  }
 }
 
 /* ---------- Pista ---------- */
