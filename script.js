@@ -15,7 +15,7 @@ const CONFIG = {
       titulo: "Donde empieza todo",
       pista: "Toda aventura parte en la puerta. Busca donde duermen las llaves de la casa.",
       ayuda: "Junto a la puerta de entrada, en el colgador que dice CASA.",
-      codigo: "AMOR", letra: "P",
+      codigo: "NINA", letra: "P",
       mensaje: "¡Primera encontrada! Vas muy bien.",
       x: 198, y: 478
     },
@@ -23,15 +23,15 @@ const CONFIG = {
       titulo: "Caras conocidas",
       pista: "Aquí hay muchas caras que te quieren. Revisa bien el marco.",
       ayuda: "En el pasillo, el cuadro grande con el collage de fotos. Mira detrás de una esquina.",
-      codigo: "ABRAZO", letra: "A",
+      codigo: "SUKI", letra: "A",
       mensaje: "Dos de siete. Ya llevas una sonrisa extra.",
       x: 190, y: 360
     },
     {
       titulo: "Garritas",
-      pista: "Donde Cookie se afila las uñas, algo te espera cerca de la escalera.",
+      pista: "Donde Noah se afila las uñas, algo te espera cerca de la escalera.",
       ayuda: "El pilar de la baranda que tiene la cuerda enrollada. Revisa los primeros escalones.",
-      codigo: "BESO", letra: "U",
+      codigo: "NOAH", letra: "U",
       mensaje: "¡Tres! Cookie aprueba.",
       x: 22, y: 205
     },
@@ -39,7 +39,7 @@ const CONFIG = {
       titulo: "Aroma de mañana",
       pista: "Hace vapor, suena fuerte y huele rico. Me despierta casi tanto como tú.",
       ayuda: "En el comedor, el rincón donde está la cafetera.",
-      codigo: "RISA", letra: "L",
+      codigo: "MADRID", letra: "L",
       mensaje: "Cuatro. Esto ya merece un cafecito.",
       x: 457, y: 30
     },
@@ -47,7 +47,7 @@ const CONFIG = {
       titulo: "En sintonía",
       pista: "Si pudiera, te dedicaría una canción por esta radio antigua.",
       ayuda: "El mueble blanco del comedor, junto a la radio café.",
-      codigo: "MIMO", letra: "I",
+      codigo: "PARIS", letra: "I",
       mensaje: "¡Cinco! Ya casi.",
       x: 471, y: 200
     },
@@ -55,7 +55,7 @@ const CONFIG = {
       titulo: "Rayas y flores",
       pista: "Entre cojines a rayas, justo bajo un ramo que nunca se marchita.",
       ayuda: "En el sofá de la sala, entre los cojines que quedan bajo el cuadro de flores.",
-      codigo: "CARIÑO", letra: "N",
+      codigo: "MONTEVIDEO", letra: "N",
       mensaje: "Seis de siete. ¡Queda una!",
       x: 169, y: 64
     },
@@ -63,7 +63,7 @@ const CONFIG = {
       titulo: "Vidrio arriba, madera abajo",
       pista: "La mesa que está al centro de todo tiene un segundo piso. Asómate.",
       ayuda: "La mesa de centro de la sala: revisa la repisa de abajo.",
-      codigo: "SIEMPRE", letra: "A",
+      codigo: "KAI", letra: "A",
       mensaje: "¡Las tienes todas!",
       x: 245, y: 134
     }
