@@ -30,7 +30,7 @@
     </header>
 
     <div class="map-wrap">
-      <svg id="map" viewBox="0 0 360 520" role="img" aria-label="Mapa de la casa">
+      <svg id="map" viewBox="0 0 496 520" role="img" aria-label="Mapa de la casa">
         <defs>
           <pattern id="floor" width="12" height="12" patternUnits="userSpaceOnUse">
             <path d="M0 12 L12 0" stroke="var(--ink)" stroke-opacity=".06" stroke-width="1"/>
@@ -39,62 +39,51 @@
 
         <!-- Habitaciones -->
         <g class="rooms">
-          <rect x="10" y="10" width="190" height="250" class="room"/>
-          <rect x="200" y="10" width="150" height="250" class="room room--alt"/>
-          <rect x="10" y="270" width="180" height="200" class="room room--alt"/>
-          <rect x="200" y="270" width="60" height="240" class="room"/>
-          <rect x="260" y="270" width="90" height="140" class="room room--alt"/>
+          <rect x="146" y="10" width="190" height="250" class="room"/>
+          <rect x="336" y="10" width="150" height="250" class="room room--alt"/>
+          <rect x="146" y="270" width="60" height="240" class="room"/>
+          <rect x="40" y="368" width="91" height="141" class="room room--alt"/>
         </g>
 
         <!-- Muebles -->
         <g class="furniture">
           <!-- Sofá en L -->
-          <path d="M20 20 H150 V46 H46 V170 H20 Z" class="piece piece--sofa"/>
+          <path d="M156 20 H286 V46 H182 V170 H156 Z" class="piece piece--sofa"/>
           <!-- Alfombra y mesa de centro -->
-          <rect x="60" y="92" width="110" height="90" rx="3" class="rug"/>
-          <rect x="72" y="112" width="74" height="44" rx="4" class="piece"/>
+          <rect x="196" y="92" width="110" height="90" rx="3" class="rug"/>
+          <rect x="208" y="112" width="74" height="44" rx="4" class="piece"/>
           <!-- Lámpara -->
-          <circle cx="178" cy="34" r="10" class="piece"/>
+          <circle cx="314" cy="34" r="10" class="piece"/>
+          <line x1="176" y1="12" x2="286" y2="12" class="window"/>
+
           <!-- Mueble TV -->
-          <rect x="58" y="236" width="124" height="18" rx="2" class="piece piece--tv"/>
-          <rect x="80" y="230" width="80" height="4" rx="1" class="tv-screen"/>
+          <rect x="10" y="232" width="125" height="18" rx="2" class="piece piece--tv"/>
+          <rect x="33" y="226" width="80" height="4" rx="1" class="tv-screen"/>
 
           <!-- Comedor -->
-          <circle cx="268" cy="125" r="36" class="piece"/>
-          <circle cx="228" cy="125" r="8" class="chair"/>
-          <circle cx="308" cy="125" r="8" class="chair"/>
-          <circle cx="268" cy="84" r="8" class="chair"/>
-          <circle cx="268" cy="166" r="8" class="chair"/>
-          <rect x="300" y="18" width="42" height="24" rx="2" class="piece"/>
-          <rect x="326" y="70" width="18" height="180" rx="2" class="piece"/>
-          <line x1="215" y1="12" x2="295" y2="12" class="window"/>
-          <line x1="40" y1="12" x2="150" y2="12" class="window"/>
-
-          <!-- Escalera -->
-          <g class="stairs">
-            <line x1="30" y1="300" x2="170" y2="300"/>
-            <line x1="30" y1="325" x2="170" y2="325"/>
-            <line x1="30" y1="350" x2="170" y2="350"/>
-            <line x1="30" y1="375" x2="170" y2="375"/>
-            <line x1="30" y1="400" x2="170" y2="400"/>
-            <line x1="30" y1="425" x2="170" y2="425"/>
-            <line x1="30" y1="450" x2="170" y2="450"/>
-          </g>
+          <circle cx="404" cy="125" r="36" class="piece"/>
+          <circle cx="364" cy="125" r="8" class="chair"/>
+          <circle cx="444" cy="125" r="8" class="chair"/>
+          <circle cx="404" cy="84" r="8" class="chair"/>
+          <circle cx="404" cy="166" r="8" class="chair"/>
+          <rect x="436" y="18" width="42" height="24" rx="2" class="piece"/>
+          <rect x="462" y="70" width="18" height="180" rx="2" class="piece"/>
+          <line x1="351" y1="12" x2="431" y2="12" class="window"/>
 
           <!-- Cuadro de fotos del pasillo -->
-          <rect x="253" y="330" width="5" height="60" class="frame"/>
+          <rect x="199" y="332" width="5" height="60" class="frame"/>
           <!-- Puerta de entrada -->
-          <path d="M205 510 A 45 45 0 0 1 250 465" class="door"/>
+          <path d="M151 510 A 45 45 0 0 1 196 465" class="door"/>
         </g>
 
         <!-- Nombres de las zonas -->
         <g class="labels">
-          <text x="105" y="210">sala</text>
-          <text x="275" y="215">comedor</text>
-          <text x="100" y="490">escalera</text>
-          <text x="305" y="345">cocina</text>
-          <text x="230" y="300" transform="rotate(-90 230 300)">pasillo</text>
-          <text x="300" y="500" class="small">← entrada</text>
+          <text x="241" y="210">sala</text>
+          <text x="411" y="215">comedor</text>
+          <text x="85" y="444">cocina</text>
+          <text x="72" y="276" class="small">mueble tele</text>
+          <text x="172" y="300" transform="rotate(-90 172 300)">pasillo</text>
+          <text x="250" y="502" class="small">← entrada</text>
         </g>
 
         <!-- Pines (los dibuja script.js) -->
