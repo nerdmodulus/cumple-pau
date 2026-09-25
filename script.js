@@ -5,7 +5,7 @@
    - codigo:   palabra escrita en la tarjeta de cada mini regalo
    - letra:    letra que gana (juntas forman su nombre)
    - mensaje:  lo que aparece al encontrarlo
-   - x, y:     posición del pin en el mapa (0–360, 0–520)
+   - x, y:     posición del pin en el mapa (0–496, 0–520)
    ========================================================= */
 const CONFIG = {
   nombre: "Paulina",
@@ -17,7 +17,7 @@ const CONFIG = {
       ayuda: "Junto a la puerta de entrada, en el colgador que dice CASA.",
       codigo: "AMOR", letra: "P",
       mensaje: "¡Primera encontrada! Vas muy bien.",
-      x: 252, y: 478
+      x: 198, y: 478
     },
     {
       titulo: "Caras conocidas",
@@ -25,7 +25,7 @@ const CONFIG = {
       ayuda: "En el pasillo, el cuadro grande con el collage de fotos. Mira detrás de una esquina.",
       codigo: "ABRAZO", letra: "A",
       mensaje: "Dos de siete. Ya llevas una sonrisa extra.",
-      x: 244, y: 360
+      x: 190, y: 360
     },
     {
       titulo: "Garritas",
@@ -33,7 +33,7 @@ const CONFIG = {
       ayuda: "El pilar de la baranda que tiene la cuerda enrollada. Revisa los primeros escalones.",
       codigo: "BESO", letra: "U",
       mensaje: "¡Tres! Cookie aprueba.",
-      x: 150, y: 330
+      x: 22, y: 205
     },
     {
       titulo: "Aroma de mañana",
@@ -41,7 +41,7 @@ const CONFIG = {
       ayuda: "En el comedor, el rincón donde está la cafetera.",
       codigo: "RISA", letra: "L",
       mensaje: "Cuatro. Esto ya merece un cafecito.",
-      x: 321, y: 30
+      x: 457, y: 30
     },
     {
       titulo: "En sintonía",
@@ -49,7 +49,7 @@ const CONFIG = {
       ayuda: "El mueble blanco del comedor, junto a la radio café.",
       codigo: "MIMO", letra: "I",
       mensaje: "¡Cinco! Ya casi.",
-      x: 335, y: 200
+      x: 471, y: 200
     },
     {
       titulo: "Rayas y flores",
@@ -57,7 +57,7 @@ const CONFIG = {
       ayuda: "En el sofá de la sala, entre los cojines que quedan bajo el cuadro de flores.",
       codigo: "CARIÑO", letra: "N",
       mensaje: "Seis de siete. ¡Queda una!",
-      x: 33, y: 64
+      x: 169, y: 64
     },
     {
       titulo: "Vidrio arriba, madera abajo",
@@ -65,10 +65,10 @@ const CONFIG = {
       ayuda: "La mesa de centro de la sala: revisa la repisa de abajo.",
       codigo: "SIEMPRE", letra: "A",
       mensaje: "¡Las tienes todas!",
-      x: 109, y: 134
+      x: 245, y: 134
     }
   ],
-  final: { x: 120, y: 245 }
+  final: { x: 73, y: 241 }
 };
 
 /* ========================================================= */
@@ -118,12 +118,12 @@ function makePin(x, y, label, cls, onTap) {
   g.setAttribute("role", "button");
   if (cls.includes("current")) {
     const ring = document.createElementNS(NS, "circle");
-    ring.setAttribute("cx", x); ring.setAttribute("cy", y); ring.setAttribute("r", 13);
+    ring.setAttribute("cx", x); ring.setAttribute("cy", y); ring.setAttribute("r", 15);
     ring.setAttribute("class", "ring");
     g.appendChild(ring);
   }
   const c = document.createElementNS(NS, "circle");
-  c.setAttribute("cx", x); c.setAttribute("cy", y); c.setAttribute("r", 13);
+  c.setAttribute("cx", x); c.setAttribute("cy", y); c.setAttribute("r", 15);
   c.setAttribute("class", "base");
   const t = document.createElementNS(NS, "text");
   t.setAttribute("x", x); t.setAttribute("y", y + 1);
